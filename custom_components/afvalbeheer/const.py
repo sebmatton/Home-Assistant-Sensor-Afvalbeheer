@@ -25,7 +25,7 @@ CONF_NAME_PREFIX = 'nameprefix'
 CONF_BUILT_IN_ICONS = 'builtinicons'
 CONF_BUILT_IN_ICONS_NEW = 'builtiniconsnew'
 CONF_DISABLE_ICONS = 'disableicons'
-CONF_TRANSLATE_DAYS = 'dutch'
+CONF_TRANSLATE_DAYS = 'french'
 CONF_DAY_OF_WEEK = 'dayofweek'
 CONF_DAY_OF_WEEK_ONLY = 'dayofweekonly'
 CONF_ALWAYS_SHOW_DAY = 'alwaysshowday'
@@ -182,51 +182,51 @@ FRACTION_ICONS_NEW = {
 }
 
 DUTCH_TRANSLATION_DAYS = {
-    'Monday':       'Maandag',
-    'Tuesday':      'Dinsdag',
-    'Wednesday':    'Woensdag',
-    'Thursday':     'Donderdag',
-    'Friday':       'Vrijdag',
-    'Saturday':     'Zaterdag',
-    'Sunday':       'Zondag',
+    'Monday':       'Lundi',
+    'Tuesday':      'Mardi',
+    'Wednesday':    'Mercredi',
+    'Thursday':     'Jeudi',
+    'Friday':       'Vendredi',
+    'Saturday':     'Samedi',
+    'Sunday':       'Dimanche',
 }
 
 DUTCH_TRANSLATION_DAYS_SHORT = {
-    'Mon':  'Maa',
-    'Tue':  'Din',
-    'Wed':  'Woe',
-    'Thu':  'Don',
-    'Fri':  'Vri',
-    'Sat':  'Zat',
-    'Sun':  'Zon',
+    'Mon':  'Lun',
+    'Tue':  'Mar',
+    'Wed':  'Mer',
+    'Thu':  'Jeu',
+    'Fri':  'Ven',
+    'Sat':  'Sam',
+    'Sun':  'Dim',
 }
 
 DUTCH_TRANSLATION_MONTHS = {
-    'January':      'januari',
-    'February':     'februari',
-    'March':        'maart',
-    'April':        'april',
-    'May':          'mei',
-    'June':         'juni',
-    'July':         'juli',
-    'August':       'augustus',
-    'September':    'september',
-    'October':      'oktober',
-    'November':     'november',
-    'December':     'december'
+    'January':      'janvier',
+    'February':     'février',
+    'March':        'mars',
+    'April':        'avril',
+    'May':          'mai',
+    'June':         'juin',
+    'July':         'juillet',
+    'August':       'aout',
+    'September':    'septembre',
+    'October':      'octobre',
+    'November':     'novembre',
+    'December':     'décembre'
 }
 
 DUTCH_TRANSLATION_MONTHS_SHORT = {
     'Jan':  'jan',
-    'Feb':  'feb',
-    'Mar':  'mrt',
-    'Apr':  'apr',
-    'May':  'mei',
-    'Jun':  'jun',
-    'Jul':  'jul',
-    'Aug':  'aug',
-    'Sept': 'sep',
-    'Oct':  'okt',
+    'Feb':  'fév',
+    'Mar':  'mar',
+    'Apr':  'avr',
+    'May':  'mai',
+    'Jun':  'juin',
+    'Jul':  'juil',
+    'Aug':  'août',
+    'Sept': 'sept',
+    'Oct':  'oct',
     'Nov':  'nov',
     'Dec':  'dec',
 }
