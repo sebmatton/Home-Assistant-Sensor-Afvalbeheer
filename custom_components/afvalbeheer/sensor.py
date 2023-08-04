@@ -61,8 +61,8 @@ class WasteTypeSensor(RestoreEntity, SensorEntity):
         self.always_show_day = config.get(CONF_ALWAYS_SHOW_DAY)
         self.date_only = 1 if self.date_object else config.get(CONF_DATE_ONLY)
 
-        self._today = "Vandaag" if self.dutch_days else "Today"
-        self._tomorrow = "Morgen" if self.dutch_days else "Tomorrow"
+        self._today = "Aujourd'hui" if self.dutch_days else "Today"
+        self._tomorrow = "Demain" if self.dutch_days else "Tomorrow"
         
         formatted_name = _format_sensor(config.get(CONF_NAME), config.get(CONF_NAME_PREFIX),  self.waste_collector, self.waste_type)
         self._name = formatted_name.capitalize()
@@ -183,9 +183,9 @@ class WasteDateSensor(RestoreEntity, SensorEntity):
         self.date_delta = date_delta
         
         if self.date_delta.days == 0:
-            day = "vandaag" if self.dutch_days else "today"
+            day = "aujourd'hui" if self.dutch_days else "today"
         elif self.date_delta.days == 1:
-            day = "morgen" if self.dutch_days else "tomorrow"
+            day = "demain" if self.dutch_days else "tomorrow"
         else:
             day = ''
             
