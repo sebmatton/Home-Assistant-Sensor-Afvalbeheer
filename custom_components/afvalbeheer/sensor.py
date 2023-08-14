@@ -232,7 +232,7 @@ class WasteDateSensor(RestoreEntity, SensorEntity):
 
         if not collections:
             self._hidden = True
-            self._state = "Geen" if self.dutch_days else "None"
+            self._state = "Aucun" if self.dutch_days else "None"
             return
 
         self._hidden = False
@@ -250,7 +250,7 @@ class WasteUpcomingSensor(RestoreEntity, SensorEntity):
         self.dutch_days = config.get(CONF_TRANSLATE_DAYS)
         self.date_format = config.get(CONF_DATE_FORMAT)
          
-        self.first_upcoming = "eerst volgende" if self.dutch_days else "first upcoming"
+        self.first_upcoming = "prochain" if self.dutch_days else "first upcoming"
         formatted_name = _format_sensor(config.get(CONF_NAME), config.get(CONF_NAME_PREFIX),  self.waste_collector, self.first_upcoming)
         self._name = formatted_name.capitalize()
         self._attr_unique_id = formatted_name
@@ -299,7 +299,7 @@ class WasteUpcomingSensor(RestoreEntity, SensorEntity):
 
         if not collections:
             self._hidden = True
-            self._state = "Geen" if self.dutch_days else "None"
+            self._state = "Aucun" if self.dutch_days else "None"
             return
 
         self._hidden = False
